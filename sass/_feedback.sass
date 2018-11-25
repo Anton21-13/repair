@@ -1,6 +1,7 @@
 .feedback
   padding: 94px 0
   background: url('../img/feedback/feedback-bg.jpg') no-repeat top right -17px
+  width: 100%
 .form
   max-width: 575px  
   &__title
@@ -21,3 +22,25 @@
     display: block
     width: 100%
     font-size: 16px
+  &-call
+    display: flex
+    font-size: 15px
+    line-height: 24px
+    margin-top: 21px
+    &__callback
+      width: 225px
+
+
+      &:first-child
+        margin-right: 90px
+    &__tel
+      padding-left: 60px
+      &:before
+        display: block
+        contain: ''
+        background: url(../img/feedback/phone.png)
+    &__you
+    &__number
+      +bold
+
+

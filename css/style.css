@@ -500,7 +500,7 @@ template {
 }
 
 .main-advantages__img-1 {
-  background-image: url("../img/main/clock.png");
+  background-image: url("../img/main/clock.svg");
 }
 
 .main-advantages__img-2 {
@@ -514,6 +514,7 @@ template {
 .feedback {
   padding: 94px 0;
   background: url("../img/feedback/feedback-bg.jpg") no-repeat top right -17px;
+  width: 100%;
 }
 
 .form {
@@ -546,6 +547,37 @@ template {
   display: block;
   width: 100%;
   font-size: 16px;
+}
+
+.form-call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 21px;
+}
+
+.form-call__callback {
+  width: 225px;
+}
+
+.form-call__callback:first-child {
+  margin-right: 90px;
+}
+
+.form-call__tel {
+  padding-left: 60px;
+}
+
+.form-call__tel:before {
+  display: block;
+  contain: '';
+  background: url(../img/feedback/phone.png);
+}
+
+.form-call__number {
+  font-family: 'Museo Sans Bold', sans-serif;
 }
 
 *, *:after, *:before {
