@@ -29,16 +29,17 @@
     margin-top: 21px
     &__callback
       width: 225px
-
-
       &:first-child
         margin-right: 90px
     &__tel
+      position: relative
       padding-left: 60px
       &:before
-        display: block
-        contain: ''
-        background: url(../img/feedback/phone.png)
+        left: 0
+        position: absolute
+        content: url(../img/feedback/phone.png)
+        width: 40px
+        height: 40px
     &__you
     &__number
       +bold
