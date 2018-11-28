@@ -4,8 +4,7 @@
   .main  
     &-image
       margin-top: 20px
-      &-out
-        transform: none
+
 
 @media (max-width: 992px)
   .box
@@ -26,6 +25,7 @@
     display: none
   .box
     width: 95%
+    text-align: center
   .main
     &-wrap
       flex-direction: column
@@ -33,9 +33,36 @@
       max-width: 400px
       margin: auto
       &__title
-        text-align: center
+  .form
+    margin: auto
+    &__input
+      width: 260px
+      &:first-child
+        margin-right: 10px
 
-@media (max-width: 480px)
+@media (max-width: 576px)
+  .hidden-xs
+    display: none
+  .box
+    width: 95%
+    text-align: center
+  .main
+    padding: 0
+    &-wrap
+      flex-direction: column
+    &-text
+      max-width: 400px
+      margin: auto
+      &__title
+        margin-bottom: 20px
+  .form
+    margin: auto
+    &__input
+      width: 100%
+  .feedback
+    padding: 20px 0    
+
+@media (max-width: 320px)
   .hidden-xs
     display: none
   .box
@@ -47,4 +74,4 @@
       max-width: 400px
       margin: auto
       &__title
-        text-align: center
+        text-align: center        
