@@ -526,7 +526,7 @@ template {
 
 .feedback {
   padding: 94px 0;
-  background: url("../img/feedback/feedback-bg.jpg") no-repeat top left 700px;
+  background: url("../img/feedback/feedback-bg.jpg") no-repeat top left 100%;
   background-size: contain;
   position: relative;
   z-index: 1;
@@ -655,6 +655,7 @@ img {
 @media (max-width: 992px) {
   .box {
     width: 767px;
+    text-align: center;
   }
   .main-text__title {
     font-size: 30px;
@@ -664,8 +665,14 @@ img {
     -webkit-transform: none;
             transform: none;
   }
+  .main-advantages__text {
+    text-align: left;
+  }
   .feedback {
     background: #fff;
+  }
+  .form {
+    margin: auto;
   }
 }
 
