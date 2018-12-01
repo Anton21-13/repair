@@ -458,19 +458,23 @@ template {
 
 .modal-info__text-title {
   font-family: 'Museo Sans Medium', sans-serif;
-}
-
-.modal-info__price {
-  list-style-type: none;
-  margin-top: 12px;
-}
-
-.modal-info__price::before {
   position: relative;
+  padding-bottom: 13px;
+}
+
+.modal-info__text-title:before {
+  position: absolute;
+  bottom: 0;
   content: '';
   width: 42px;
   height: 2px;
   background-color: #ffd200;
+}
+
+.modal-info__price {
+  list-style-type: none;
+  height: 39px;
+  margin-top: 12px;
 }
 
 .modal-info__price span {
