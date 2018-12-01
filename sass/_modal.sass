@@ -1,0 +1,105 @@
+.modal
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.52)
+  left: 0
+  top: 0
+  z-index: 99
+  display: flex
+  display: none
+  &_visible
+    display: flex
+  &-dialog
+    width: 1170px
+    height: 691px
+    background-color: #fff
+    margin: auto
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+  &-part01
+    flex-basis: 600px
+    background-color: #f7f7f7
+
+  &-info
+    margin: 80px 113px 75px 78px
+    &__box
+      display: flex
+      align-items: center
+      margin-bottom: 11px
+      font-size: 16px
+    &__text
+      margin-left: 28px
+      &-title
+        +medium      
+    &__price
+      list-style-type: none
+      margin-top: 12px
+      &::before
+        position: relative
+        content: ''
+        width: 42px
+        height: 2px
+        background-color: #ffd200      
+      span
+        +bold
+  &-discription
+    font-size: 14px
+    &__title
+      +bold
+      margin-top: 53px
+      margin-bottom: 28px
+    &__list
+      line-height: 25px
+    &__post
+      padding-left: 13px
+      list-style-type: none
+      &:before
+        content: url(../img/modal/li.png)
+        position: relative
+        right: 14px
+
+  &-part02
+    flex-basis: 570px
+    text-align: center
+  &-feedback
+    margin: 80px 100px 76px
+    &__title
+      font-size: 22px
+      +bold
+      margin-bottom: 52px
+    &__subtitle
+      font-size: 16px
+      margin-bottom: 53px
+  &__input
+    width: 100%
+    margin-bottom: 15px
+  &__button
+    margin-top: 30px
+    margin-bottom: 33px
+    width: 100%
+    padding: 28px
+  &-call
+    flex-direction: column    
+    &__number
+      +bold
+      font-size: 24px
+      text-decoration: none
+      color: $text-collor
+
+
+
+  &-close
+    position: absolute
+    top: 15px
+    right: 15px
+    &:hover
+      cursor: pointer
+
+
+
+
+
+ 

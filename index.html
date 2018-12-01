@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="box header-wrap">
+      <div class="container header-wrap">
         <div class="header-logo">
           <img src="img/header-logo.jpg" alt="Ремонт Квартир">
         </div>
@@ -18,14 +18,14 @@
             <a class="header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
           </div>
           <div class="header-text__button">
-            <button class="button">Перезвоните <span class="hidden-xs">мне</span></button>
+            <button class="button" id="button-callback">Перезвоните <span class="hidden-xs">мне</span></button>
           </div>
         </div>
       </div>
     </header>
 
     <div class="main">
-      <div class="box">
+      <div class="container">
         <div class="main-wrap">
           <div class="main-text">
             <h1 class="main-text__title">Внутренняя отделка помещений "под&nbsp;ключ"
@@ -65,7 +65,7 @@
     </div>
     
     <section class="feedback">
-      <div class="box">
+      <div class="container">
         <div class="form">
           <h2 class="form__title">Мы бесплатно разработаем
           дизайн-проект Вашего жилья и&nbsp;реализуем
@@ -84,13 +84,109 @@
               Наш менеджер перезвонит Вам в течение 60;в&nbsp;секунд</div>
             <div class="form-call__tel">
               <div class="form-call__you">или перезвоните нам</div>
-              <div class="form-call__number">+7 (495) 42-251-31</div>
-
+              <a class="form-call__number" href="tel:+74954225131">+7 (495) 42-251-31</a>
             </div>
-          </div>
-            
+          </div>            
         </div>        
       </div>
     </section>
+
+    <div class="modal" id="modal-callback">
+
+      <div class="modal-dialog">
+        <div class="modal-part01">
+          <div class="modal-info">
+            <div class="modal-info__box">
+              <div class="modal-info__img">
+                <img src="img/modal/modal_01.png" alt="Ванная комната">
+              </div>
+              <div class="modal-info__text">
+                <div class="modal-info__text-title">Ванная камната</div>
+                  <div class="modal-info__price">
+                  <li>135*150 -
+                    <span>31 000 руб.</span>
+                  </li>
+                  <li>135*150 -
+                    <span>43 000 руб.</span>
+                  </li>
+                  </div>
+              </div>
+            </div>
+            <div class="modal-info__box">
+              <div class="modal-nfo__img">
+                <img src="img/modal/modal_02.png" alt="Туалет">
+              </div>
+              <div class="modal-info__text">
+                <div class="modal-info__text-title">Туалет</div>
+                  <div class="modal-info__price">
+                  <li>135*70 -
+                    <span>14 000 руб.</span>
+                  </li>                 
+                  </div>
+              </div>
+            </div>
+            <div class="modal-info__box">
+              <div class="modal-nfo__img">
+                <img src="img/modal/modal_03.png" alt="Совмещенный санузел">
+              </div>
+              <div class="modal-info__text">
+                <div class="modal-info__text-title">Совмещенный санузел</div>
+                  <div class="modal-info__price">                 
+                  <li>170*210 -
+                    <span>54 000 руб.</span>
+                  </li>
+                  </div>
+              </div>
+            </div>
+
+            <div class="modal-discription">
+              <div class="modal-discription__title">
+                В стоимость работ входит 
+              </div>
+              <div class="modal-discription__list">
+                <li class="modal-discription__post">Демонтаж старого покрытия стен и пола</li>
+                <li class="modal-discription__post">Выравнивание стен гипсовыми составами</li>
+                <li class="modal-discription__post">Грунтовка стен и пола антисептиком, бетоноконтактом</li>
+                <li class="modal-discription__post">Монтаж кафельной плитки на полу и стенах</li>
+                <li class="modal-discription__post">Установка реечного или натяжного потолка, светильников</li>
+                <li class="modal-discription__post">Монтаж двери с коробкой</li>
+              </div>
+
+            </div>            
+          </div>
+        </div>
+        <div class="modal-part02">
+          <div class="modal-feedback">          
+            <div class="form">
+              <h2 class="modal-feedback__title">Узнайте точную стоимость ремонта&nbsp;по&nbsp;телефону!</h2>
+              <div class="modal-feedback__subtitle">Заполните поля ниже - мы свяжемся с Вами</div>
+              <form action="#">
+                <input type="text" class="input input-name modal__input" placeholder="Ваше имя">
+                <input type="phone" class="input input-phone modal__input" pattern="+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" maxlength="12" placeholder="Ваш телефон">
+                <button type="submit" class="button modal__button">Узнать стоимость</button>
+              </form>
+              <div class="modal-call">                
+                <div class="modal-call__you">Или Вы можете перезвонить нам сами по&nbsp;телефону:</div>
+                <a class="modal-call__number" href="tel:+78182425131">+7 (8182) 42-51-31</a>
+              </div>            
+            </div>
+          </div>
+        </div>
+        <div class="modal-close">&#10006;</div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelector('#button-callback').addEventListener('click', function() {
+        document.querySelector('#modal-callback').classList.toggle('modal_visible');
+      });
+      document.querySelector('.modal-close').addEventListener('click', function() {
+        document.querySelector('#modal-callback').classList.toggle('modal_visible');
+      });
+    </script>
+
+    <!--<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="script.js"></script>-->
   </body>
 </html>
