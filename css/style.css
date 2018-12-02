@@ -801,6 +801,10 @@ template {
   text-align: center;
 }
 
+.slider__item:focus {
+  outline: none;
+}
+
 .slider__item img {
   margin: auto;
 }
@@ -1187,7 +1191,7 @@ img {
     padding-bottom: 100px;
   }
   .arrow {
-    bottom: -47px;
+    display: none;
   }
 }
 
