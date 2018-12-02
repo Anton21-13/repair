@@ -888,12 +888,6 @@ img {
   }
 }
 
-@media (max-width: 1023px) {
-  .slider__item {
-    width: 95%;
-  }
-}
-
 @media (max-width: 1199px) {
   .container {
     width: 970px;
@@ -918,6 +912,12 @@ img {
   }
   .slider__item img {
     max-width: 95%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .slider__item img {
+    width: 100%;
   }
 }
 
