@@ -12,26 +12,26 @@
     display: flex
   &-dialog
     width: 1170px
-    height: 691px
     background-color: #fff
     margin: auto
     display: flex
     justify-content: center
-    align-items: center
     position: relative
   &-part01
-    flex-basis: 600px
+    width: 600px
     background-color: #f7f7f7
 
   &-info
     margin: 80px 113px 75px 78px
     &__box
       display: flex
-      align-items: center
       margin-bottom: 11px
-      font-size: 16px
+      font-size: 16px 
+    &__image
+      min-width: 120px
+      min-height: 89px      
     &__text
-      margin-left: 28px
+      margin-left: 28px     
       &-title
         +medium
         position: relative
@@ -56,17 +56,17 @@
       margin-top: 53px
       margin-bottom: 28px
     &__list
-      line-height: 25px
+      line-height: 25px      
     &__post
       padding-left: 13px
-      list-style-type: none
+      list-style-type: none      
       &:before
         content: url(../img/modal/li.png)
         position: relative
         right: 14px
 
   &-part02
-    flex-basis: 570px
+    width: 570px
     text-align: center
   &-feedback
     margin: 80px 100px 76px

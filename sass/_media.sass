@@ -16,6 +16,17 @@
   .main  
     &-image
       margin-top: 20px
+  .modal
+    &-dialog
+      width: 730px
+    &-part01
+      width: 365px
+    &-part02
+      width: 365px
+    &-info
+      margin: 25px
+    &-feedback
+      margin: 40px 8px 
 
 
 @media (max-width: 992px)
@@ -36,7 +47,8 @@
   .feedback
     background: #fff
   .form
-    margin: auto  
+    margin: auto
+ 
 
 @media (max-width: 768px)
   .feedback
@@ -73,6 +85,36 @@
       width: 530px
       margin: auto
       margin-top: 20px
+  .modal
+    &-dialog
+      overflow: auto
+      flex-direction: column
+      justify-content: center
+      width: 500px      
+    &-part01 
+      width: 500px 
+    &-part02 
+      width: 500px
+      order: -1
+    &-info
+      margin: 20px  
+    &-discription
+      &__title
+        margin-top: 10px
+        margin-bottom: 10px
+    &-feedback
+      margin-top: 10px
+      margin-bottom: 10px
+      &__title
+        margin-bottom: 10px
+      &__subtitle
+        margin-bottom: 15px
+    &__input
+      text-align: center
+    &__button
+      margin-top: 15px
+      margin-bottom: 15px
+        
 
 @media (max-width: 576px)
   .header
@@ -131,6 +173,30 @@
 
   .feedback
     padding: 20px 0
+  .modal
+    &-dialog
+      width: 300px
+    &-part01 
+      width: 300px 
+    &-part02 
+      width: 300px
+    &-info
+      &__box
+        flex-direction: column
+        text-align: center
+      &__image
+        align-items: center
+        order: 1
+      &__text
+        align-items: center
+        margin: auto
+        width: 180px
+        &__title
+          &:before
+            left: auto
+            right: auto
+    &-discription
+          
 
 
 @media (max-width: 320px)
