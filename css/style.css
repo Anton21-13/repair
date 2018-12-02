@@ -889,7 +889,7 @@ img {
 }
 
 @media (max-width: 1023px) {
-  .slider__item img {
+  .slider__item {
     width: 95%;
   }
 }
