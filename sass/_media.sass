@@ -86,8 +86,9 @@
       margin: auto
       margin-top: 20px
   .modal
-    &-dialog
+    &_visible
       overflow: auto
+    &-dialog
       flex-direction: column
       justify-content: center
       width: 500px      
@@ -182,6 +183,7 @@
       width: 300px
     &-info
       &__box
+        margin-bottom: 20px
         flex-direction: column
         text-align: center
       &__image
@@ -191,10 +193,11 @@
         align-items: center
         margin: auto
         width: 180px
-        &__title
+        &-title
+          padding-bottom: 8px
           &:before
-            left: auto
-            right: auto
+      &__price
+        margin-top: 8px    
     &-discription
           
 

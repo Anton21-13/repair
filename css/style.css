@@ -777,6 +777,11 @@ template {
   color: #333333;
 }
 
+.portfolio {
+  background-color: #f5f5f5;
+  padding: 100px 0;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -794,6 +799,15 @@ body {
 
 img {
   max-width: 100%;
+}
+
+.section-title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 45px;
+}
+
+.section-title_center {
+  text-align: center;
 }
 
 @media (max-width: 1486px) {
@@ -906,8 +920,10 @@ img {
     margin: auto;
     margin-top: 20px;
   }
-  .modal-dialog {
+  .modal_visible {
     overflow: auto;
+  }
+  .modal-dialog {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1054,6 +1070,7 @@ img {
     width: 300px;
   }
   .modal-info__box {
+    margin-bottom: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1075,9 +1092,11 @@ img {
     margin: auto;
     width: 180px;
   }
-  .modal-info__text__title:before {
-    left: auto;
-    right: auto;
+  .modal-info__text-title {
+    padding-bottom: 8px;
+  }
+  .modal-info__price {
+    margin-top: 8px;
   }
 }
 
