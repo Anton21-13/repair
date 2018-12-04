@@ -5,4 +5,3 @@ if (mail("anton23.pochta@gmail.com", "Test Ajax", $_REQUEST["fio"] . " " . $_REQ
 else  
   echo "0";
 
-?>
