@@ -122,6 +122,51 @@
     </section>
     <!-- /.portfolio -->
 
+    <div class="footer-feedback">
+      <div class="container">
+        <div class="footer-feedback-wrap">
+          <div class="footer-feedback-text">
+            <div class="footer-feedback-text__title">Мы можем озвучить Вам примерную стоимость
+              работы и материалов по телефону</div>
+            <!-- /.footer-feedback-text__title -->
+            <div class="footer-feedback-text__subtitle">Для этого нужно ответить на 4 вопроса:</div>
+            <!-- /.footer-feedback-text__subtitle -->
+            <div class="footer-feedback-text__questions">
+              <ol>
+                <li>Какова площадь помещения?</li>
+                <li>У Вас новостройка или вторичное жилье?</li>
+                <li>Где находится помещение, в котором будет производиться ремонт?</li>
+                <li>Назначение помещения?</li>
+              </ol>
+            </div>
+            <!-- /.footer-feedback-text__qestions -->
+          </div>
+          <!-- /.footer-feedback-text -->
+          <div class="footer-feedback-client">
+            <div class="footer-feedback-client__title">Оставьте заявку на бесплатный 
+              расчет ремонта по телефону</div>
+            <!-- /.footer-feedback-client__title -->
+            <div class="footer-feedback-client__subtitle">Для этого заполните форму ниже</div>
+            <!-- /.footer-feedback-client__subtitle -->
+            <div class="footer-feedback-client__form">
+              <form action="send.php" class="js-ajax">
+                <input type="text" name="fio" class="input input-name form__input" placeholder="Ваше имя">
+                <input type="phone" name="phone" class="input input-phone form__input" pattern="+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" maxlength="13" placeholder="Ваш телефон">
+                <button type="submit" class="button form__button">Рассчитать стоимость</button>
+              </form>
+            </div>
+            <!-- /.footer-feedback-client__form -->
+            <div class="footer-feedback-client__call">Мы перезвоним Вам в течение 60 секунд</div>
+            <!-- /.footer-feedback-client__call -->
+          </div>
+          <!-- /.footer-feedback-client -->
+        </div>
+        <!-- /.footer-feedback-wrap -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.footer-feedback -->
+
     <div class="modal" id="modal-callback">
 
       <div class="modal-dialog">
@@ -169,6 +214,7 @@
                   </div>
               </div>
             </div>
+            <!-- /.modal -->
 
             <div class="modal-discription">
               <div class="modal-discription__title">
@@ -251,7 +297,8 @@
               breakpoint: 769,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                arrows: false
                 
               }
             },
@@ -259,8 +306,8 @@
               breakpoint: 576,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false
+                slidesToScroll: 1
+
               }
             }
           ]

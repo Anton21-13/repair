@@ -1,0 +1,67 @@
+.footer
+  &-feedback
+    color: #000000
+    padding-top: 106px
+    padding-bottom: 70px
+    background: url('../img/footer-feedback/footer-feedback-bg.jpg') no-repeat top left 100%
+    background-size: contain
+    position: relative
+    z-index: 1
+    &:before
+      content: ''
+      left: 0
+      top: 0
+      width: 54%
+      height: 100%
+      background-color: $orange-bg-collor
+      position: absolute
+      z-index: -1
+    &-wrap
+      display: flex
+    &-text 
+      flex-basis: 50%
+      &__title
+        +bold
+        font-size: 22px
+        line-height: 33px
+      &__subtitle
+        margin-top: 50px
+        margin-bottom: 103px
+      &__questions
+        font-size: 18px
+        +medium
+        margin: 0 auto
+        ol
+          counter-reset: myCounter
+          counter-reset: item
+          list-style: none
+          padding: 0
+          margin: 0 auto
+        li
+          padding-bottom: 38px
+          position: relative
+          padding-left: 67px
+          width: 450px
+          &:before
+            position: absolute
+            left: 0
+            top: -7px
+            width: 35px
+            height: 35px
+            content: counter(item) '.'
+            counter-increment: item
+            border: 2px solid #000000
+            border-radius: 50%
+            padding: 8px 12px
+            font-size: 14px
+            +bold
+
+    &-client
+      flex-basis: 50%
+      padding-left: 216px
+      text-align: center
+      &__title
+        font-size: 22px
+        font-weight: 400
+        line-height: 33px
+        +bold
