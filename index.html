@@ -206,6 +206,7 @@
         <div class="modal-close">&#10006;</div>
       </div>
     </div>
+    <!-- /.modal -->
 
     <script>
       document.querySelector('#button-callback').addEventListener('click', function() {
@@ -260,8 +261,6 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: false
-
-
               }
             }
           ]
@@ -271,7 +270,7 @@
           var data = $('.js-ajax').serialize();
 
           $.ajax({
-            url: '/php/send.php',
+            url: './php/send.php',
             data: data,
             success: function(data) {
               if(data == 1)
