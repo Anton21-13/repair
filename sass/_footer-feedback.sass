@@ -3,7 +3,7 @@
     color: #000000
     padding-top: 106px
     padding-bottom: 70px
-    background: url('../img/footer-feedback/footer-feedback-bg.jpg') no-repeat top left 100%
+    background: url('../img/footer-feedback/footer-feedback-bg.jpg') no-repeat 100%
     background-size: contain
     position: relative
     z-index: 1
@@ -18,8 +18,10 @@
       z-index: -1
     &-wrap
       display: flex
+      justify-content: space-between
     &-text 
       flex-basis: 50%
+      max-width: 515px
       &__title
         +bold
         font-size: 22px
@@ -28,6 +30,7 @@
         margin-top: 50px
         margin-bottom: 103px
       &__questions
+        text-align: left
         font-size: 18px
         +medium
         margin: 0 auto
@@ -55,13 +58,26 @@
             padding: 8px 12px
             font-size: 14px
             +bold
-
     &-client
       flex-basis: 50%
-      padding-left: 216px
+      max-width: 370px
       text-align: center
       &__title
         font-size: 22px
         font-weight: 400
         line-height: 33px
         +bold
+      &__subtitle
+        margin-top: 50px
+        margin-bottom: 49px
+      &__input
+        margin-bottom: 15px
+        width: 100%
+        &:first-child
+          margin-right: 0
+      &__button
+        margin-top: 15px
+      &__call
+        width: 100%
+        font-size: 15px
+        margin-top: 33px    
