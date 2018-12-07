@@ -1149,6 +1149,63 @@ template {
   margin: 100px auto;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map {
+  -ms-flex-preferred-size: 54%;
+      flex-basis: 54%;
+  min-height: 640px;
+  background: #000;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 46%;
+      flex-basis: 46%;
+}
+
+.contacts-wrap {
+  margin-top: 100px;
+  margin-left: 131px;
+  width: 413px;
+  line-height: 33px;
+}
+
+.contacts-steps {
+  padding-left: 41px;
+  line-height: 26px;
+  width: 190px;
+}
+
+.contacts-title {
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.contacts-info {
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.contacts__adress {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.contacts__timework {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.contacts__phone {
+  margin-bottom: 40px;
+  position: relative;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
