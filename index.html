@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Ремонт Квартир</title>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
   </head>
@@ -126,7 +127,7 @@
       <div class="container">
         <div class="footer-feedback-wrap">
           <div class="footer-feedback-text">
-            <div class="footer-feedback-text__title">Мы можем озвучить Вам примерную стоимость
+            <div data-wow-delay="2s" class="footer-feedback-text__title wow fadeInUp">Мы можем озвучить Вам примерную стоимость
               работы и материалов по телефону</div>
             <!-- /.footer-feedback-text__title -->
             <div class="footer-feedback-text__subtitle">Для этого нужно ответить на 4 вопроса:</div>
@@ -166,6 +167,67 @@
       <!-- /.container -->
     </div>
     <!-- /.footer-feedback -->
+
+    <section class="price">
+      <div class="container">
+        <h2 class="section-title_center section-title price-title">У нас очень гибкая система скидок
+          на комплексные работы!</h2>
+        <!-- /.section-title_center section-title -->
+        <h3 class="section-subtitle">Прайс на наши услуги</h3>
+        <!-- /.section-subtitle -->
+        <div class="price-wrap">
+          <div class="card wow fadeInUp" data-wow-delay="0.4s">
+            <div class="card__img-wrap">
+              <img src="img/price/price-1.jpg" alt="Ремонт ванных комнат и с/у" class="card__img">
+            </div>
+            <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+            <a href="#" class="card__link">Узнать цены</a>
+          </div>
+          <div class="card wow fadeInUp" data-wow-delay="0.8s">
+            <div class="card__img-wrap">
+              <img src="img/price/price-2.jpg" alt="Ремонт комнат и квартир" class="card__img">
+            </div>
+            <h4 class="card__title">Ремонт комнат и квартир</h4>
+            <a href="#" class="card__link">Узнать цены</a>
+          </div>
+          <div class="card wow fadeInUp" data-wow-delay="1.2s">
+            <div class="card__img-wrap">
+              <img src="img/price/price-3.jpg" alt="Отделка офисных помещений" class="card__img">
+            </div>
+            <h4 class="card__title">Отделка офисных помещений</h4>
+            <a href="#" class="card__link">Узнать цены</a>
+          </div>
+          <div class="card wow fadeInUp" data-wow-delay="1.6s">
+            <div class="card__img-wrap">
+              <img src="img/price/price-4.jpg" alt="Ремонт в новостройках" class="card__img">
+            </div>
+            <h4 class="card__title">Ремонт в новостройках</h4>
+            <a href="#" class="card__link">Узнать цены</a>
+          </div>
+          <div class="card wow fadeInUp" data-wow-delay="2s">
+            <div class="card__img-wrap">
+              <img src="img/price/price-5.jpg" alt="Ремонт кухонь" class="card__img">
+            </div>
+            <h4 class="card__title">Ремонт кухонь</h4>
+            <a href="#" class="card__link">Узнать цены</a>
+          </div>
+          <div class="card wow fadeInUp" data-wow-delay="2.4s">
+            <div class="card__img-wrap">
+              <img src="img/price/price-5.jpg" alt="Ремонт дач и коттеджей" class="card__img">
+            </div>
+            <h4 class="card__title">Ремонт дач и коттеджей</h4>
+            <a href="#" class="card__link">Узнать цены</a>
+          </div>
+        </div>
+        <!-- /.price-wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.price -->
+
+
+
+
 
     <div class="modal" id="modal-callback">
 
@@ -254,6 +316,11 @@
     </div>
     <!-- /.modal -->
 
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
     <script>
       document.querySelector('#button-callback').addEventListener('click', function() {
         document.querySelector('#modal-callback').classList.toggle('modal_visible');
@@ -332,6 +399,8 @@
       });
 
     </script>
+
+
 
   </body>
 </html>
