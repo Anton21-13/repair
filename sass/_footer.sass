@@ -2,20 +2,18 @@
   display: flex
 .map
   flex-basis: 54%
-  min-height: 640px
-  background: #000
+
 .contacts
-  flex-basis: 46%
+  flex-basis: 45%
   &-wrap
-    margin-top: 100px
-    margin-left: 131px
-    width: 413px
-    line-height: 33px
-  &-steps
-    padding-left: 41px
-    line-height: 26px
+    padding-top: 100px
+    padding-left: 131px
+    line-height: 28px
+  &-steps    
+    line-height: 22px
     width: 190px
   &-title
+    width: 300px
     font-size: 22px
     +bold
     text-align: left  
@@ -23,14 +21,39 @@
   &-info
     +bold
   &__adress
+    padding-left: 41px
     margin-bottom: 40px
     position: relative
-    &:hover
-      
+    &:before
+      position: absolute
+      width: 14px
+      height: 20px
+      content: ''
+      background-image: url('../img/footer/map-placeholder.png')
+      top: 0
+      left: 0
   &__timework
+    padding-left: 41px
     margin-bottom: 40px
     position: relative
+    &:before
+      position: absolute
+      width: 20px
+      height: 20px
+      content: ''
+      background-image: url('../img/footer/time.png')
+      top: 0
+      left: 0
   &__phone
+    padding-left: 41px
     margin-bottom: 40px
     position: relative
+    &:before
+      position: absolute
+      width: 20px
+      height: 20px
+      content: ''
+      background-image: url('../img/footer/phone.png')
+      top: 0
+      left: 0
 
