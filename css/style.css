@@ -1236,6 +1236,94 @@ template {
   left: 0;
 }
 
+.buy {
+  margin: 100px 0;
+}
+
+.buy-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.buy-card {
+  background-color: #f7f7f7;
+  width: 370px;
+  height: 410px;
+  position: relative;
+}
+
+.buy-card__title {
+  position: absolute;
+  top: 27px;
+  left: 26px;
+  ont-size: 16px;
+  line-height: 23px;
+  text-align: left;
+  width: 290px;
+}
+
+.buy-card__img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.warranty {
+  margin-top: 43px;
+  margin-bottom: 232px;
+}
+
+.warranty-wrap {
+  margin-top: 99px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.warranty-title {
+  margin: auto;
+  width: 650px;
+  font-size: 30px;
+  line-height: 45px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  text-align: center;
+}
+
+.warranty-page {
+  width: 290px;
+}
+
+.warranty-page__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 360px;
+  border: 20px solid #f5f5f5;
+  background-color: #ffffff;
+  margin-bottom: 41px;
+}
+
+.warranty-page__info {
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1315,6 +1403,15 @@ img {
   }
   .card {
     margin: 15px;
+  }
+  .buy-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .buy-card {
+    margin-top: 30px;
   }
 }
 
@@ -1451,6 +1548,16 @@ img {
   }
   .map {
     height: 650px;
+  }
+  .warranty {
+    margin-bottom: 150px;
+  }
+  .warranty-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .warranty-page {
+    margin: 30px;
   }
 }
 
@@ -1626,6 +1733,20 @@ img {
   .map {
     height: 450px;
   }
+  .buy {
+    margin: 50px 0;
+  }
+  .warranty {
+    margin: 50px 0;
+  }
+  .warranty-title {
+    font-size: 24px;
+    width: 450px;
+    line-height: 35px;
+  }
+  .warranty-wrap {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1780,7 +1901,6 @@ img {
   .footer-feedback-text__title {
     max-width: 300px;
     text-align: justify;
-    text-align: center;
     line-height: 28px;
     font-size: 18px;
     margin: 0 auto;
@@ -1802,7 +1922,7 @@ img {
   .footer-feedback-client__title {
     margin-top: 10px;
     max-width: 300px;
-    text-align: justify;
+    text-align: center;
     line-height: 28px;
     font-size: 18px;
     margin: 0 auto;
@@ -1861,6 +1981,17 @@ img {
   .map {
     height: 350px;
   }
+  .warranty {
+    margin: 0;
+  }
+  .warranty-title {
+    font-size: 22px;
+    width: 300px;
+    line-height: 35px;
+  }
+  .warranty-wrap {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1916,6 +2047,26 @@ img {
   }
   .map {
     height: 300px;
+  }
+  .warranty-title {
+    width: 280px;
+    font-size: 18px;
+  }
+  .warranty-page {
+    width: 280px;
+  }
+}
+
+@media (max-width: 390px) {
+  .buy {
+    margin: 20px 0;
+  }
+  .buy-card {
+    width: 300px;
+    height: 330px;
+  }
+  .buy-card__title {
+    width: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -35,11 +35,18 @@
     &-wrap
       justify-content: center
   .card
-    margin: 15px    
+    margin: 15px
+  .buy
+    &-wrap
+      flex-wrap: wrap
+      justify-content: space-around
+    &-card
+      margin-top: 30px
 
 @media (max-width: 1050px)
   .portfolio
     background: $light-bg-color
+
 
 @media (max-width: 992px)
   .container
@@ -135,6 +142,12 @@
       text-align: center
   .map
     height: 650px
+  .warranty
+    margin-bottom: 150px
+    &-wrap
+      flex-wrap: wrap
+    &-page
+      margin: 30px
 
 
 @media (max-width: 768px)
@@ -269,7 +282,17 @@
     &-title
       margin-bottom: 40px
   .map
-    height: 450px    
+    height: 450px
+  .buy
+    margin: 50px 0
+  .warranty
+    margin: 50px 0
+    &-title
+      font-size: 24px
+      width: 450px
+      line-height: 35px
+    &-wrap
+      margin-top: 50px
 
 @media (max-width: 576px)
   .header
@@ -372,7 +395,6 @@
         &__title
           max-width: 300px
           text-align: justify
-          text-align: center
           line-height: 28px
           font-size: 18px
           margin: 0 auto
@@ -389,7 +411,7 @@
         &__title
           margin-top: 10px
           max-width: 300px
-          text-align: justify
+          text-align: center
           line-height: 28px
           font-size: 18px
           margin: 0 auto
@@ -434,6 +456,15 @@
       padding-left: 20px
   .map
     height: 350px
+  .warranty
+    margin: 0
+    &-title
+      font-size: 22px
+      width: 300px
+      line-height: 35px
+    &-wrap
+      margin-top: 0  
+
 
 @media (max-width: 320px)
   .hidden-xs
@@ -478,4 +509,20 @@
     &-title
       width: 280px
   .map
-    height: 300px    
+    height: 300px
+  .warranty
+    &-title
+      width: 280px
+      font-size: 18px
+    &-page
+      width: 280px
+          
+@media (max-width: 390px)
+  .buy
+    margin: 20px 0  
+    &-card
+      width: 300px
+      height: 330px
+      &__title
+        width: 250px
+
